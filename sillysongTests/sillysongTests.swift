@@ -10,10 +10,11 @@ import XCTest
 @testable import sillysong
 
 class sillysongTests: XCTestCase {
+    var generator:LyricGenerator!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        generator = LyricGenerator()
     }
     
     override func tearDown() {
@@ -21,16 +22,26 @@ class sillysongTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testShortNameFromName() {
+        let actual = generator.shortNameFromName(name: "Zöe")
+        
+        XCTAssertEqual(actual, "öe")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCustomizingTemplate() {
+        let bananaFanaTemplate = [
+            "<FULL_NAME>, <FULL_NAME>, Bo B<SHORT_NAME>",
+            "Banana Fana Fo F<SHORT_NAME>",
+            "Me My Mo M<SHORT_NAME>",
+            "<FULL_NAME>"].joined(separator: "\n")
+        let actual = generator.lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: "Nate")
+        let expected = [
+            "Nate, Nate, Bo Bate",
+            "Banana Fana Fo Fate",
+            "Me My Mo Mate",
+            "Nate"].joined(separator: "\n")
+        print(actual)
+        XCTAssertEqual(actual, expected)
     }
     
 }

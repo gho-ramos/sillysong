@@ -13,6 +13,8 @@
 		E6064AEE1F898C88006F7B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6064AED1F898C88006F7B96 /* Assets.xcassets */; };
 		E6064AF11F898C88006F7B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6064AEF1F898C88006F7B96 /* LaunchScreen.storyboard */; };
 		E6064AFC1F898C88006F7B96 /* sillysongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6064AFB1F898C88006F7B96 /* sillysongTests.swift */; };
+		E6064B071F898CF3006F7B96 /* LyricGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6064B061F898CF3006F7B96 /* LyricGenerator.swift */; };
+		E6064B081F898CF3006F7B96 /* LyricGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6064B061F898CF3006F7B96 /* LyricGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		E6064AF71F898C88006F7B96 /* sillysongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sillysongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6064AFB1F898C88006F7B96 /* sillysongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sillysongTests.swift; sourceTree = "<group>"; };
 		E6064AFD1F898C88006F7B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6064B061F898CF3006F7B96 /* LyricGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				E6064AED1F898C88006F7B96 /* Assets.xcassets */,
 				E6064AEF1F898C88006F7B96 /* LaunchScreen.storyboard */,
 				E6064AF21F898C88006F7B96 /* Info.plist */,
+				E6064B061F898CF3006F7B96 /* LyricGenerator.swift */,
 			);
 			path = sillysong;
 			sourceTree = "<group>";
@@ -201,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6064B071F898CF3006F7B96 /* LyricGenerator.swift in Sources */,
 				E6064AE91F898C88006F7B96 /* ViewController.swift in Sources */,
 				E6064AE71F898C88006F7B96 /* AppDelegate.swift in Sources */,
 			);
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6064AFC1F898C88006F7B96 /* sillysongTests.swift in Sources */,
+				E6064B081F898CF3006F7B96 /* LyricGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
