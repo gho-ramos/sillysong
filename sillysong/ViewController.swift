@@ -30,6 +30,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func displayLyrics(_ sender: Any) {
+        guard nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) != "" else {
+            lyricsView.text = "Please enter a name"
+            return
+        }
         lyricsView.text = generator.lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: nameField.text!)
     }
 }
